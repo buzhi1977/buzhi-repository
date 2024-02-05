@@ -1,0 +1,41 @@
+html,body,h3,p {
+    margin: 0;
+    padding: 0;
+}
+.el-header {
+    padding: 0;
+}
+.el-card__body,.el-main {
+    padding: 10px;
+    font-size: 10px;
+}
+.el-input__inner {
+    height: 30px;
+    line-height: 30px;
+    font-size: smaller;
+}
+.el-dialog__body {
+    padding: 10px 20px;
+}
+.el-form .el-form-item {
+    margin-bottom: 10px;
+}
+.el-button{
+    padding: 8px 12px;
+    font-size: 12px;
+}
+.el-tag{
+    height: 25px;
+    padding: 0 8px;
+    line-height: 25px;
+    /* font-size: 10px; */
+}
+.el-dialog .el-dialog__title{
+    font-size: 14px;
+}
+.el-form .el-form-item__label{
+    font-size: 13px;
+}
+.el-form .el-form-item__error{
+    padding-top: 0;
+}

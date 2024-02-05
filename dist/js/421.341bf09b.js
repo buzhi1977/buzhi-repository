@@ -1,0 +1,2 @@
+"use strict";(self["webpackChunkmy_app"]=self["webpackChunkmy_app"]||[]).push([[421],{9421:function(n,u,e){e.r(u),e.d(u,{default:function(){return a}});var l=function(){var n=this,u=n._self._c;return u("h1",[n._v("你没有权限访问此页面哦")])},t=[],r=e(1001),p={},s=(0,r.Z)(p,l,t,!1,null,null,null),a=s.exports}}]);
+//# sourceMappingURL=421.341bf09b.js.map
