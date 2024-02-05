@@ -10,5 +10,6 @@ module.exports = defineConfig({
       msTileImage: 'favicon.ico'
     }
   },
-  publicPath:'localReposotiry' //仓库名字
+  publicPath:'buzhi-repository', //仓库名字
+  base:'/buzhi-repository/'
 })
