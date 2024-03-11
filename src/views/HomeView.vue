@@ -143,7 +143,7 @@ export default {
     }
   },
   mounted() {
-    this.username=localStorage.getItem('username')
+    this.username=sessionStorage.getItem('username')
     // getData().then((data)=>{
     //   console.log("=======getData",data)
     // })

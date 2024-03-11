@@ -1,8 +1,8 @@
 <template>
-  <div class="about">    
+  <div class="about">
     <el-container>
       <el-aside width="auto">
-        <Sidebar/>
+        <Sidebar />
       </el-aside>
       <el-container>
         <el-header>
@@ -23,10 +23,17 @@ import Header from '../components/Header.vue';
 import Tabs from '../components/Tabs.vue'
 
 export default {
-    name: 'AboutView',
-    components: { Sidebar,Header,Tabs }
+  name: 'AboutView',
+  components: { Sidebar, Header, Tabs },
+  beforeDestroy() {
+    // 最后一步，离开页面的时候，清除缓存
+    window.removeEventListener("click", () => { }, true);
+    console.log("==============removeItem")
+    for (let item in sessionStorage) {
+      sessionStorage.removeItem(item)
+    }
+  },
 }
 </script>
 
-<style scoped>
-</style>
+<style scoped></style>

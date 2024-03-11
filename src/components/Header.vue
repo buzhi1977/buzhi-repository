@@ -44,8 +44,8 @@ export default {
         },
         handleCommand(command){
             if(command==='logout'){
-                localStorage.removeItem('token')
-                localStorage.removeItem('username')
+                sessionStorage.removeItem('token')
+                sessionStorage.removeItem('username')
                 sessionStorage.removeItem('menu')
                 this.$router.push({name:'login'})
             }

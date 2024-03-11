@@ -57,8 +57,8 @@ export default {
                     if (this.form.username == 'admin' || this.form.username == 'user') {
                         //请求后端登录接口获取token
                         const token = Math.round(Math.random() * (100000000 - 10000000)) + 100000000;
-                        localStorage.setItem("token", token);
-                        localStorage.setItem('username',this.form.username)
+                        sessionStorage.setItem("token", token);
+                        sessionStorage.setItem('username',this.form.username)
                         if (this.form.username == 'admin') this.$store.commit('setMenu', menuDataAdmin)
                         else this.$store.commit('setMenu', menuDataUser)
                         this.$store.commit("addMenu", this.$router);

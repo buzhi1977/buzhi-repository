@@ -1,6 +1,9 @@
 const { defineConfig } = require('@vue/cli-service')
 module.exports = defineConfig({
   transpileDependencies: true,
+  // build: {
+  //   outDir: "buzhi-repository"
+  // },
   pwa: {
     iconPaths: {
       favicon32: 'favicon.ico',
@@ -10,6 +13,6 @@ module.exports = defineConfig({
       msTileImage: 'favicon.ico'
     }
   },
-  publicPath:'buzhi-repository', //仓库名字
-  base:'/buzhi-repository/'
+  // publicPath:'buzhi-repository', //仓库名字
+  // base:'/buzhi-repository/'
 })

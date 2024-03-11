@@ -4,8 +4,11 @@ import router from './router'
 import './plugins/element.js'
 import store from "./store"
 import './assets/css/main.css'
+import storageCleanerMixin from './storageCleanerMixin'
 
-Vue.config.productionTip = false
+// Vue.mixin(storageCleanerMixin)
+
+//Vue.config.productionTip = false//关闭生产提示
 
 new Vue({
   router,

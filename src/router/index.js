@@ -47,12 +47,14 @@ const router = new VueRouter({
 
 // 导航守卫
 router.beforeEach((to,from,next)=>{
-  console.log("===========username",localStorage.getItem('username'))
-  const username=localStorage.getItem('username');
-  const token=localStorage.getItem("token")
+  console.log("===========username",sessionStorage.getItem('username'))
+  const username=sessionStorage.getItem('username');
+  const token=sessionStorage.getItem("token")
   if(!token && to.name!=='login'){
+    console.log("===========222")
     next({name:'login'})
   }else if(token && to.name==='login'){
+    console.log("===========333")
     next({name:'home'})
   // }else if(token && username==='user' && (to.name=='user' || to.name.indexOf('page')!=-1)){
   //   next({name:'403'})
